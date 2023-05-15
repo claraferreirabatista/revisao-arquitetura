@@ -1,3 +1,6 @@
+/* criação do banco de dados
+ */
+
 import { knex } from "knex"
 
 export abstract class BaseDatabase {
@@ -7,7 +10,7 @@ export abstract class BaseDatabase {
             filename: "./src/database/arquitetura.db",
         },
         useNullAsDefault: true,
-        pool: { 
+        pool: {
             min: 0,
             max: 1,
             afterCreate: (conn: any, cb: any) => {
