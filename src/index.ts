@@ -8,7 +8,8 @@ a partir disso executar o primeiro teste npm run dev
 Estou fazendo uma configuração de dentro para fora 
 
 
-index >>> banco de dados >> configuração knex >> criação do Router >> criação da controller >>
+index >>> banco de dados >> configuração knex >> criação do Router >> 
+criação da controller >> criação dos types >> criação de models >> criação do database>> business
 */
 
 import express from 'express'
