@@ -8,17 +8,15 @@ a partir disso executar o primeiro teste npm run dev
 Estou fazendo uma configuração de dentro para fora 
 
 
-index >>> banco de dados >> configuração knex >> criação do Router >> 
+index >>> banco de dados >> configuração knex >> criação do Router >> criação da controller >>
 */
-
-
 
 import express from 'express'
 import cors from 'cors'
 import { productRouter } from './routers/productsRouter'
-/*
+
 import { brandRouter } from './routers/brandRouter'
- */
+
 const app = express()
 
 app.use(cors())
@@ -28,5 +26,5 @@ app.listen(3003, () => console.log("Server rodando na porta 3003"))
 
 app.use("/products", productRouter)
 
-/*
-app.use("/brands", brandRouter) */
+
+app.use("/brands", brandRouter)
